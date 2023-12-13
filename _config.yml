@@ -1,0 +1,59 @@
+# Site
+name: '医陪诊&陪诊师创业联盟'
+description: '陪诊师知识经验分享'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+baseurl: '/'
+disqus: ''
+email: ''
+mailchimp-list: ''
+
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  
+authors:
+    小Zz:
+      name:           
+      site:           https://epeizhen.com
+      avatar:         /assets/images/avatar1.jpg
+      bio:            ""
+      email:   
+      wechat:           https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2Mzg3Njc4Nw==&scene=124#wechat_redirect     
+
+   
+ 
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: 小Zz
+      avatar: /assets/images/avatar1.jpg
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Paginate
+paginate: 10
+
+
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
