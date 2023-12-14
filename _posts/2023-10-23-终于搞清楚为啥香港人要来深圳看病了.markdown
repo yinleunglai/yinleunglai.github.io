@@ -27,9 +27,9 @@ image: assets/images/2023-10-23.jpg
 
 看到这里大家和我一样就不难理解为啥通关之后越来越多香港人来深圳看病啦。如果您需要在深圳找一个靠谱的陪诊师陪同您前往医院就医，可以在微信搜一搜【91陪诊】小程序直接预约哈，我们看到订单后会尽快为您安排陪诊师，陪诊师接单后会与您沟通具体的服务细节的。
 
- ![就医找陪诊，就找91陪诊](assets/images/system/miniprogram-ad.png)
+ ![就医找陪诊，就找91陪诊](/assets/images/system/miniprogram-ad.png)
 
 如果您对深圳的就医流程或者医院科室分布有任何不了解的地方，也欢迎添加客服微信（请备注“咨询下单”）或者在小程序首页客服号联系我们，我们将竭诚为您服务。
 
 
- ![官方客服微信](assets/images/system/client-suport.png)
+ ![官方客服微信](/assets/images/system/client-suport.png)
