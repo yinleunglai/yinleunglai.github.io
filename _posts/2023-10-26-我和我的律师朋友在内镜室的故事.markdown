@@ -2,8 +2,9 @@
 layout: post
 title:  "我和我的律师朋友在内镜室的故事"
 categories: [ 陪诊笔记 ]
-image: assets/images/2023-10-26.jpg
+image: assets/images/2023-10-26.png
 ---
+
 
 护士：家属过来，签字交费，去前台拿报告。
 

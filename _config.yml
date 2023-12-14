@@ -1,6 +1,6 @@
 # Site
-name: '医陪诊&陪诊师创业联盟'
-description: '陪诊师知识经验分享'
+name: '陪诊师创业联盟'
+description: '陪诊知识经验分享、陪诊预约指南、异地就医陪诊、全程陪诊'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
@@ -19,14 +19,23 @@ plugins:
   - jekyll-seo-tag
   
 authors:
-    小Zz:
+    91陪诊:
       name:           
-      site:           https://epeizhen.com
-      avatar:         /assets/images/avatar1.jpg
+      site:           http://www.qpeizhen.com
+      avatar:         /assets/images/system/logo.png
       bio:            ""
       email:   
-      wechat:           https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2Mzg3Njc4Nw==&scene=124#wechat_redirect     
+      wechat:           https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg4NDkwMzk4OA==&scene=124#wechat_redirect    
 
+    陪诊师创业联盟:
+      name:           
+      site:           https://epeizhen.com
+      avatar:         /assets/images/system/logo2.png
+      bio:            ""
+      email:   
+      wechat:         https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2Mzg3Njc4Nw==&scene=124#wechat_redirect     
+
+   
    
  
 # Defaults

@@ -3,7 +3,7 @@ title: "陪诊师创业联盟"
 layout: default
 pagination:
     enabled: true
-description: "陪诊师知识分享。"
+description: "陪诊知识经验分享、陪诊预约指南、异地就医陪诊、全程陪诊"
 ---
 
 
@@ -168,7 +168,7 @@ description: "陪诊师知识分享。"
    
     <div class="col-md-8 main-loop">
         
-        <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
+        <h4 class="font-weight-bold spanborder"><span>陪诊故事</span></h4>
         
 
         {% for post in paginator.posts %}
