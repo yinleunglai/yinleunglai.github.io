@@ -46,8 +46,8 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      author: 小Zz
-      avatar: /assets/images/avatar1.jpg
+      author: peizhenshi
+      avatar: /assets/images/system/logo2.png
       
   # all pages
   - scope:
