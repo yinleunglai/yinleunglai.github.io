@@ -22,7 +22,7 @@ image: assets/images/2024-04-15/7638943698.jpg
 
     (3) 居住滿半年的證明（包括房屋產權證明文件、房屋租賃合約、居住社區或物業管理處開立嘅居住證明、境外人員臨時登記表、僱傭合同、就業證明、就讀學校證明、學生證等，以上任何一種均可，要留意證明文件嘅蓋章日期盡量係1個月之內）。16歲以下兒童需要法定代理人（一般係父母）代辦，要帶埋法定代理人嘅回鄉證正本同影印本，如果16歲以下兒童無法親自到現場，要帶埋出生證明文件正本同影印本。
 
-![政务服务](/assets/images/2024-04-15/2024-04-15-pic-1.png)
+![政务服务](https://mmbiz.qpic.cn/sz_mmbiz_png/p3UU5bnftgPaqWQG4WpiaO4lzUnNmF6Gp2kuNE3lS7mqKLF4dCdR0m4yHVeRSHegibg8I89RSONn7YZpGtL1wgKw/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=10005&wx_lazy=1&wx_co=1)
 
 交齊所有資料文件，現場填寫申領登記表，驗證手指紋就完成啦。辦理時間大概需要10個工作日，攞證可以揀自己到現場攞或者速遞，速遞費由申請人喺收到證件個時俾錢，預計大概18元人民幣。
 
@@ -35,8 +35,8 @@ image: assets/images/2024-04-15/7638943698.jpg
 ### 三、申請醫保（網上辦理）
 由於深圳社保改革，取消咗二檔社保，香港居民個人靈活就業淨係可以購買一檔社保。喺｢深圳社保｣公眾號——｢便民服務｣——｢業務辦理｣——｢靈活就業登記和參保登記｣，簽訂醫保自動繳費協議，一般每個月20號左右會自動喺你銀行戶口繳費，唔使自己操作。
 
-![深圳社保](/assets/images/2024-04-15/2024-04-15-pic-2.png)
-![深圳社保](/assets/images/2024-04-15/2024-04-15-pic-3.png)
+![深圳社保](https://mmbiz.qpic.cn/sz_mmbiz_png/p3UU5bnftgPaqWQG4WpiaO4lzUnNmF6Gpj8icJnL8TpdhADxv5J0Uswannq8jg7I30Z9vvQ4LLGLHdA69VKhRmKg/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=10005&wx_lazy=1&wx_co=1)
+![深圳社保](https://mmbiz.qpic.cn/sz_mmbiz_png/p3UU5bnftgPaqWQG4WpiaO4lzUnNmF6Gp680e3X3TThrsK45uicJtqAaJDpXibBP8QJPfkiax5ibibBjibRBrlbPtNmJg/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=10005&wx_lazy=1&wx_co=1)
 
 ### 四、申請並領取金融社保卡（要喺深圳辦理）
 
@@ -44,9 +44,9 @@ image: assets/images/2024-04-15/7638943698.jpg
 
 2. 收到短信通知金融社保卡辦理成功後，帶埋居住證、回鄉證，去銀行攞卡就得，攞到之後記得喺｢深圳社保｣公眾號——｢便民服務｣——｢辦理業務｣——｢社保卡管理｣——｢社保卡功能管理｣及時激活個張卡嘅社保功能同金融功能。
 
-![深圳社保](/assets/images/2024-04-15/2024-04-15-pic-4.png)
+![深圳社保](https://mmbiz.qpic.cn/sz_mmbiz_png/p3UU5bnftgPaqWQG4WpiaO4lzUnNmF6Gp6iaCI3wumbJIMYon6DwGZyrrbnoKBt9u82mRdgsQjPQZMzJYa4ibEaOQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=10005&wx_lazy=1&wx_co=1)
 
-![深圳社保](/assets/images/2024-04-15/2024-04-15-pic-5.png)
+![深圳社保](https://mmbiz.qpic.cn/sz_mmbiz_png/p3UU5bnftgPaqWQG4WpiaO4lzUnNmF6GpzLhrLzYNS3xosjqpiaHHicr8XwvCqYBCAjSYNNvicSYVLgiaqhBQ8EUynQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=10005&wx_lazy=1&wx_co=1)
 
 ### 五、綁定社康中心（網上辦理）
 
@@ -54,7 +54,7 @@ image: assets/images/2024-04-15/7638943698.jpg
 
 ![社康中心](/assets/images/2024-04-15/2024-04-15-pic-6.png)
 
-![深圳醫保](/assets/images/2024-04-15/2024-04-15-pic-7.png)
+![深圳醫保](https://mmbiz.qpic.cn/sz_mmbiz_png/p3UU5bnftgPaqWQG4WpiaO4lzUnNmF6GpK3mobSDj0xXnjHpr4cC2tR68HPu02QuzDN08MFYAz2NZC0Ufe0qYhg/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=10005&wx_lazy=1&wx_co=1)
 
 ## 點樣搵到適合自己的醫療機構同埋醫生？
 
@@ -92,11 +92,11 @@ image: assets/images/2024-04-15/7638943698.jpg
 
 1. 喺微信search｢深圳醫保｣公眾號——｢掌上政務｣——｢醫保價格通｣，就可以check唔同醫療機構藥物、耗材、檢查項目嘅報價啦，不過具體收費仲係要視乎醫院實際收費，只作為參考。
 
-![深圳醫保](/assets/images/2024-04-15/2024-04-15-pic-8.png)
+![深圳醫保](https://mmbiz.qpic.cn/sz_mmbiz_png/p3UU5bnftgNzYwoZdvh74lIxooayJWVopqSibRCqia8LkH2VAUJZDhBa8YXZEllMe3YRKHM2bv9XPkrRLMhNrfsw/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=10005&wx_lazy=1&wx_co=1)
 
-![深圳醫保](/assets/images/2024-04-15/2024-04-15-pic-9.png)
+![深圳醫保](https://mmbiz.qpic.cn/sz_mmbiz_png/p3UU5bnftgNzYwoZdvh74lIxooayJWVoUplnD9h52IFrL2fobP0djBWfaQqbxy83r0M3PIib22VIiarpiaxq7eSrg/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=10005&wx_lazy=1&wx_co=1)
 
-![深圳醫保](/assets/images/2024-04-15/2024-04-15-pic-10.png)
+![深圳醫保](https://mmbiz.qpic.cn/sz_mmbiz_png/p3UU5bnftgNzYwoZdvh74lIxooayJWVosns8Fn5GjggQKtOXYhKQzSQlqRsUVrfJJOIORCxjdKhib0uJibl8k3Zw/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=10005&wx_lazy=1&wx_co=1)
 
 2. 喺微信search｢醫院名稱｣，點擊進入醫院主頁，可以進行｢物價查詢｣，有啲醫院會公佈收費標準，可以通過關鍵字來搜，例如搜｢腸鏡｣來查詢價格。有啲醫院冇網上公佈收費標準，亦可撥打醫院電話來進一步了解，或者去醫院服務櫃檯查詢。
 
@@ -132,12 +132,12 @@ image: assets/images/2024-04-15/7638943698.jpg
 
 ## 如果你喺深圳就醫遇到溝通方面或者流程方面嘅問題，需要專業陪診師陪你就醫，可以提前12個鐘喺微信小程序｢91陪診｣預約，預約之後陪診師將協助你進行掛號，與你溝通具體服務細節，幫助你快速就醫。
 
-![就医找陪诊，就找91陪诊](/assets/images/system/miniprogram-ad.png)
+![就医找陪诊，就找91陪诊](https://mmbiz.qpic.cn/sz_mmbiz_png/p3UU5bnftgPeWnLVQoicThpwvNAta9hjlCqU2oib7ibVdrjdtGeqwP5hro9zsM61u4SH6Jicic1bO1uHLsVhVgN4jZA/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=10005&wx_lazy=1&wx_co=1)
 
-![91陪诊](/assets/images/2024-04-15/2024-04-15-pic-11.png)
+![91陪诊](https://mmbiz.qpic.cn/sz_mmbiz_png/p3UU5bnftgNzYwoZdvh74lIxooayJWVoHP1o3PDeKhYibSBn4ObiaUf5pOuQDmpU7o6Z1eymy2EEr4P5n43zQP2g/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=10005&wx_lazy=1&wx_co=1)
 
 ## 如果你唔方便直接過深圳睇醫生，希望節省時間提高就醫效率，可以提前12個鐘喺微信小程序｢91陪診｣預約代問診服務，由專業陪診師代你前往醫院同醫生溝通你幫嘅病情，如果醫生同意，仲可以同你視頻診查，幫你開藥、預約好檢查或者開立住院通知書，具體服務內容同收費可以點擊下面條link查詢：
 
 ## 如果您有任何疑問，都可以添加以下｢91陪診｣官方客服微信，進行咨詢，歡迎體驗我哋嘅專業陪診服務。
 
-![咨询客服](/assets/images/2024-04-15/2024-04-15-pic-12.png)
+![咨询客服](https://mmbiz.qpic.cn/sz_mmbiz_png/p3UU5bnftgNzYwoZdvh74lIxooayJWVo3NjKXsYElQknH436Gk4blKxYlYIPjt1ahGRYq6XGicDibSPrlSktYUSg/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=10005&wx_lazy=1&wx_co=1)
