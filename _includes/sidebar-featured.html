@@ -1,21 +1,31 @@
 <div class="sticky-top sticky-top-offset">
-    <h4 class="font-weight-bold spanborder"><span>主题</span></h4>  
-    <ol class="list-featured">				
-        {% for post in site.tags.featured %}                
-            <li class="mb-4">
-            <span>
-                <h6 class="font-weight-bold">
-                    <a href="{{site.baseurl}}{{ post.url }}" class="text-dark">{{ post.title }}</a>
-                </h6>
-                <span class="d-block text-muted">
-                    In <span class="catlist">
-                    {% for category in post.categories %}
-                    <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                    {% endfor %}
-                    </span>
-                </span>
-            </span>
+    <h5 class="font-weight-bold spanborder"><span>主题</span></h5>  
+    <ul class="list-unstyled featured-posts-list">
+        {% for post in site.tags.featured limit:5 %} {# Added a limit to prevent overly long sidebars #}
+            <li class="mb-3">
+                <div class="featured-sidebar-item d-flex">
+                    {% if post.image %}
+                    <div class="featured-sidebar-thumb-container mr-3">
+                        <a href="{{site.baseurl}}{{ post.url }}">
+                            <img src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{site.baseurl}}/{{ post.image}}{% endif %}" alt="{{ post.title }}" class="featured-sidebar-thumb" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;">
+                        </a>
+                    </div>
+                    {% endif %}
+                    <div class="featured-sidebar-content">
+                        <h6 class="font-weight-bold mb-1">
+                            <a href="{{site.baseurl}}{{ post.url }}" class="text-dark">{{ post.title }}</a>
+                        </h6>
+                        <small class="text-muted d-block">
+                            In <span class="catlist">
+                            {% for category in post.categories %}
+                            <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                            {% endfor %}
+                            </span>
+                        </small>
+                        {# Optionally, add date: <small class="text-muted">{{ post.date | date: '%b %d, %Y' }}</small> #}
+                    </div>
+                </div>
             </li>                
         {% endfor %}   
-    </ol>
+    </ul>
 </div> 

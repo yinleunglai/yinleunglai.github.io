@@ -5804,6 +5804,221 @@ button.bg-lightblue:focus {
   .align-self-xl-stretch {
     align-self: stretch !important; } }
 
+/* Custom Styles for New UI Design */
+/*--------------------------------------------------------------
+# Homepage Custom Styles
+--------------------------------------------------------------*/
+
+/* Hero Post Section */
+.hero-post {
+  /* The card already has box-shadow from Bootstrap, but we can customize if needed */
+  /* border: 1px solid #e0e0e0; */ /* Example: if we want a distinct border */
+  margin-bottom: 2rem; /* Ensure spacing below hero post */
+}
+
+.hero-post .topfirstimage { /* Class used in index.md for the hero image div */
+  border-radius: 0.25rem 0.25rem 0 0; /* Match card's top border radius */
+}
+
+.hero-post .card-body {
+  padding-left: 0; /* As per existing structure in index.md */
+  padding-right: 0;
+}
+
+.hero-post .card-title a {
+  color: var(--dark); /* Using existing color variable */
+}
+
+.hero-post .card-title a:hover {
+  color: var(--primary); /* Using existing color variable */
+  text-decoration: none;
+}
+
+.hero-post .excerpt {
+  font-size: 1.1rem;
+  color: var(--gray-dark);
+}
+
+/* Recent & Sticky Posts Grid */
+.recent-posts-grid .col-md-4 {
+  display: flex; /* Ensures cards in a row take up equal height if content varies */
+  flex-direction: column;
+}
+
+.condensed-post-card {
+  border: 1px solid #eee; /* Lighter border for condensed cards */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.050); /* Softer shadow */
+  transition: box-shadow 0.3s ease-in-out;
+  height: 100%; /* Make card fill the column height */
+}
+
+.condensed-post-card:hover {
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.condensed-post-card .card-img-top {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.condensed-post-card .card-body {
+  padding: 1rem; /* Consistent padding */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allows card body to expand */
+}
+
+.condensed-post-card .card-title {
+  font-size: 1rem; /* Slightly smaller title for condensed cards */
+  margin-bottom: 0.5rem;
+}
+
+.condensed-post-card .card-title a {
+  color: var(--dark);
+}
+
+.condensed-post-card .card-title a:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.condensed-post-card .badge { /* For sticky badge */
+  font-size: 0.7rem;
+  padding: 0.3em 0.5em;
+  vertical-align: middle;
+}
+
+.condensed-post-card .small, .condensed-post-card small {
+  font-size: 80%; /* Ensure meta text is small */
+}
+
+.condensed-post-card .catlist a {
+  font-size: 0.75rem;
+}
+
+
+/* Sidebar Featured Posts */
+.featured-posts-list .featured-sidebar-item {
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #f0f0f0; /* Subtle separator */
+  align-items: center; /* Vertically align items if heights differ */
+}
+
+.featured-posts-list .featured-sidebar-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.featured-sidebar-thumb-container {
+  flex-shrink: 0; /* Prevent thumbnail from shrinking */
+}
+
+.featured-sidebar-thumb {
+  /* Styles already applied inline: width: 60px; height: 60px; object-fit: cover; border-radius: 4px; */
+  /* Add a subtle border if desired */
+  /* border: 1px solid #ddd; */
+}
+
+.featured-sidebar-content h6 {
+  font-size: 0.9rem; /* Title size for sidebar items */
+  margin-bottom: 0.25rem; /* Space between title and meta */
+  line-height: 1.3;
+}
+.featured-sidebar-content h6 a {
+  color: var(--dark);
+}
+.featured-sidebar-content h6 a:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.featured-sidebar-content .text-muted {
+  font-size: 0.8rem; /* Smaller meta text */
+}
+
+.featured-sidebar-content .catlist a {
+  font-size: 0.7rem;
+}
+
+
+/* General Typography and Spacing Adjustments */
+body {
+  line-height: 1.7; /* Slightly more spacious line height */
+}
+
+a {
+  transition: color 0.2s ease-in-out;
+}
+
+.spanborder { /* This class is used for headings like "陪诊经验分享" */
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+}
+.spanborder span {
+    border-bottom: 1px solid var(--primary); /* Highlight color for the text part */
+    padding-bottom: 10px;
+}
+
+
+/* Responsive Adjustments */
+
+/* For smaller screens, hero post title and excerpt might need size adjustment */
+@media (max-width: 767.98px) {
+  .hero-post .card-title {
+    font-size: 1.75rem; /* Adjust h3 size for mobile */
+  }
+  .hero-post .excerpt {
+    font-size: 1rem;
+  }
+  .hero-post .topfirstimage {
+    height: 200px !important; /* Adjust hero image height for mobile if needed */
+  }
+
+  .recent-posts-grid .col-md-4 {
+    margin-bottom: 1.5rem; /* Add margin between stacked cards on mobile */
+  }
+}
+
+/* Adjust grid items for very small screens if needed */
+@media (max-width: 575.98px) {
+  .condensed-post-card .card-title {
+    font-size: 0.95rem;
+  }
+  .main-loop .col-md-8, .main-loop .col-md-4 {
+     padding-left: 0; /* Example: remove padding on very small screens for main content area */
+     padding-right: 0;
+  }
+}
+
+/* Ensure remove-site-content-margin works as intended, if it's for removing default container padding */
+.remove-site-content-margin {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+@media (max-width: 575.98px) {
+    .remove-site-content-margin {
+        margin-left: -5px; /* Less negative margin on very small screens if gutters are smaller */
+        margin-right: -5px;
+    }
+}
+
+/* Fix for category list spacing */
+.catlist span.sep:last-child {
+    display: none;
+}
+.card-body .d-flex.flex-column.align-items-start .excerpt.small {
+    margin-bottom: 0.5rem; /* Add some space below excerpt in condensed cards */
+}
+
+/* Sticky top offset for sidebar */
+.sticky-top-offset {
+    top: 80px; /* Adjust based on actual navbar height */
+}
+
 .float-left {
   float: left !important; }
 

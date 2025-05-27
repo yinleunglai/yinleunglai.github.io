@@ -1,0 +1,29 @@
+<div class="card condensed-post-card mb-4 box-shadow">
+    <a href="{{ site.baseurl }}{{ include.post.url }}">
+        {% if include.post.image %}
+            {% if include.post.image contains "://" %}
+                <img class="card-img-top" src="{{ include.post.image }}" alt="{{ include.post.title }}" style="height: 150px; object-fit: cover;">
+            {% else %}
+                <img class="card-img-top" src="{{ site.baseurl }}/{{ include.post.image }}" alt="{{ include.post.title }}" style="height: 150px; object-fit: cover;">
+            {% endif %}
+        {% else %}
+            <img class="card-img-top" src="{{ site.baseurl }}/assets/images/placeholder.png" alt="{{ include.post.title }}" style="height: 150px; object-fit: cover;">
+        {% endif %}
+    </a>
+    <div class="card-body">
+        <h6 class="card-title font-weight-bold">
+            <a class="text-dark" href="{{ site.baseurl }}{{ include.post.url }}">{{ include.post.title }}</a>
+            {% if include.highlighted %}
+            <span class="badge badge-primary ml-1">Sticky</span>
+            {% endif %}
+        </h6>
+        <small class="text-muted">{{ include.post.date | date: '%b %d, %Y' }}</small>
+        <small class="d-block text-muted">
+            In <span class="catlist">
+            {% for category in include.post.categories %}
+            <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+            {% endfor %}
+            </span>
+        </small>
+    </div>
+</div>
