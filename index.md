@@ -13,168 +13,89 @@ description: "陪诊知识经验分享、陪诊预约指南、异地就医陪诊
     
     
     
-<!-- Begin post excerpts, let's highlight the first 4 posts on top -->
-<div class="row remove-site-content-margin">
-    
-    <!-- latest post -->
+    {% assign displayed_posts = "" | split: "," %}
+
+    <!-- Prominent Latest Post -->
     {% assign latest_post = site.posts[0] %}
-    <div class="col-md-6">
-    <div class="card border-0 mb-4 box-shadow">   
-    <a href="{{site.baseurl}}{{latest_post.url}}">
-    <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} {{site.baseurl}}/{{ latest_post.image}}{% endif %}); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
-    </a>
-    <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
-    <h2 class="h4 font-weight-bold">
-    <a class="text-dark" href="{{site.baseurl}}{{latest_post.url}}">{{ latest_post.title }}</a>
-    </h2>
-    <p class="excerpt">
-        {{ latest_post.excerpt | strip_html | strip_newlines | truncate: 136 }}
-    </p>
-    <div>
-        <small class="d-block text-muted">
-            In <span class="catlist">
-                {% for category in latest_post.categories %}
-                <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                {% endfor %}
-                </span>                   
-        </small>
-        <small class="text-muted">
-            {{ latest_post.date | date: '%b %d, %Y' }}
-        </small>
-    </div>
-    </div>
-    </div>
-    </div>
-    
-    <div class="col-md-6">
-        
-        <!-- second latest post -->
-        {%- assign second_post = site.posts[1] -%}        
-        <div class="mb-3 d-flex align-items-center">                
-                {% if second_post.image %}
-                <div class="col-md-4">
-                <a href="{{site.baseurl}}{{second_post.url}}">
-                 <img class="w-100" src="{% if second_post.image contains "://" %}{{ second_post.image }}{% else %}{{ second_post.image | absolute_url }}{% endif %}" alt="{{ second_post.title }}">
-                </a>
+    {% if latest_post %}
+        <div class="row mb-4 remove-site-content-margin">
+            <div class="col-md-12">
+                <div class="card border-0 box-shadow hero-post">   
+                    <a href="{{site.baseurl}}{{latest_post.url}}">
+                        <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} {{site.baseurl}}/{{ latest_post.image}}{% endif %}); height: 300px; background-size: cover; background-repeat: no-repeat; background-position: center;"></div>     
+                    </a>
+                    <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
+                        <h2 class="h3 font-weight-bold">
+                            <a class="text-dark" href="{{site.baseurl}}{{latest_post.url}}">{{ latest_post.title }}</a>
+                        </h2>
+                        <p class="excerpt">
+                            {{ latest_post.excerpt | strip_html | strip_newlines | truncate: 200 }}
+                        </p>
+                        <div>
+                            <small class="d-block text-muted">
+                                In <span class="catlist">
+                                    {% for category in latest_post.categories %}
+                                    <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                                    {% endfor %}
+                                </span>                   
+                            </small>
+                            <small class="text-muted">
+                                {{ latest_post.date | date: '%b %d, %Y' }}
+                            </small>
+                        </div>
+                    </div>
                 </div>
-                {% endif %}                
-                <div>
-                    <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href="{{site.baseurl}}{{second_post.url}}">{{ second_post.title }}</a>
-                    </h2>
-                    <small class="d-block text-muted">
-                        In <span class="catlist">
-                        {% for category in second_post.categories %}
-                        <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                        {% endfor %}
-                        </span>                   
-                    </small>
-                    <small class="text-muted">
-                        {{ second_post.date | date: '%b %d, %Y' }}
-                    </small>
-                </div>
-            </div>
-        
-        <!-- third latest post -->
-        {%- assign third_post = site.posts[2] -%}        
-        <div class="mb-3 d-flex align-items-center">                
-                {% if third_post.image %}
-                <div class="col-md-4">
-                <a href="{{site.baseurl}}{{third_post.url}}">
-                 <img class="w-100" src="{% if third_post.image contains "://" %}{{ third_post.image }}{% else %}{{site.baseurl}}/{{ third_post.image }}{% endif %}" alt="{{ third_post.title }}">
-                </a>
-                </div>
-                {% endif %}                
-                <div>
-                    <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href="{{site.baseurl}}{{third_post.url}}">{{ third_post.title }}</a>
-                    </h2>
-                    <small class="d-block text-muted">
-                        In <span class="catlist">
-                        {% for category in third_post.categories %}
-                        <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                        {% endfor %}
-                        </span>                   
-                    </small>
-                    <small class="text-muted">
-                        {{ third_post.date | date: '%b %d, %Y' }}
-                    </small>
-                </div>
-            </div>
-        
-        <!-- fourth latest post -->
-        {%- assign fourth_post = site.posts[3] -%}        
-        <div class="mb-3 d-flex align-items-center">                
-                {% if fourth_post.image %}
-                <div class="col-md-4">
-                <a href="{{site.baseurl}}{{fourth_post.url}}">
-                <img class="w-100" src="{% if fourth_post.image contains "://" %}{{ fourth_post.image }}{% else %}{{site.baseurl}}/{{ fourth_post.image }}{% endif %}" alt="{{ fourth_post.title }}">
-                </a>
-                </div>
-                {% endif %}                
-                <div>
-                    <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href="{{site.baseurl}}{{fourth_post.url}}">{{ fourth_post.title }}</a>
-                    </h2>
-                    <small class="d-block text-muted">
-                        In <span class="catlist">
-                        {% for category in fourth_post.categories %}
-                        <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                        {% endfor %}
-                        </span>                   
-                    </small>
-                    <small class="text-muted">
-                        {{ fourth_post.date | date: '%b %d, %Y' }}
-                    </small>
-                </div>
-            </div>
-        
-    </div>
-    
-</div>
-    
-<!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
-{% for post in site.posts %} 
-{% if post.tags contains "sticky" %}
-<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
-    <div class="pl-4 pr-0 h-100 tofront">
-        <div class="row justify-content-between">
-            <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
-                <h1 class="mb-3">{{post.title}}</h1>
-                <p class="mb-3 lead">
-                    {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
-                </p>
-                <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
-            </div>
-            <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});">	
             </div>
         </div>
+        {% assign displayed_posts = displayed_posts | push: latest_post.url %}
+    {% endif %}
+
+    <!-- Grid/Row of Other Recent/Featured Posts -->
+    <div class="row recent-posts-grid mb-4">
+        {% assign limit_recent = 3 %}
+        {% assign recent_counter = 0 %}
+        {% for post_item in site.posts offset:1 %}
+            {% if recent_counter < limit_recent %}
+                {% unless displayed_posts contains post_item.url %}
+                    <div class="col-md-4">
+                        {% include post-card-condensed.html post=post_item %}
+                    </div>
+                    {% assign displayed_posts = displayed_posts | push: post_item.url %}
+                    {% assign recent_counter = recent_counter | plus: 1 %}
+                {% endunless %}
+            {% endif %}
+        {% endfor %}
+
+        {% comment %} Display sticky posts that haven't been displayed yet, up to a certain limit if needed {% endcomment %}
+        {% assign sticky_limit = 3 %} {% comment %} Max number of sticky posts in this section if not already shown {% endcomment %}
+        {% assign sticky_displayed_count = 0 %}
+        {% for sticky_post in site.tags.sticky %}
+            {% if sticky_displayed_count < sticky_limit %}
+                {% unless displayed_posts contains sticky_post.url %}
+                    <div class="col-md-4">
+                         {% include post-card-condensed.html post=sticky_post highlighted=true %}
+                    </div>
+                    {% assign displayed_posts = displayed_posts | push: sticky_post.url %}
+                    {% assign sticky_displayed_count = sticky_displayed_count | plus: 1 %}
+                {% endunless %}
+            {% endif %}
+        {% endfor %}
     </div>
-</div> 
-{% endif %}
-{% endfor %}
-
-
-    
-
 
 {% endif %} <!--endif page url is / -->
     
-
-
-<!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above -->
-    
+<!-- Rest of the posts with pagination -->
 <div class="row mt-3">
    
     <div class="col-md-8 main-loop">
         
-        <h4 class="font-weight-bold spanborder"><span>陪诊故事</span></h4>
+        <h4 class="font-weight-bold spanborder"><span>陪诊经验分享</span></h4>
         
 
         {% for post in paginator.posts %}
-        
-            {% include main-loop-card.html %}
-        
+            {% unless displayed_posts contains post.url %}
+                {% include main-loop-card.html %}
+            {% endunless %}
         {% endfor %}
         
         <div class="mt-5">
